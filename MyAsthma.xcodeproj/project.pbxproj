@@ -10,12 +10,15 @@
 		A31A4A9F27301FFB0055772F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A4A9E27301FFB0055772F /* AppDelegate.swift */; };
 		A31A4AA127301FFB0055772F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A4AA027301FFB0055772F /* SceneDelegate.swift */; };
 		A31A4AA327301FFB0055772F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A4AA227301FFB0055772F /* ViewController.swift */; };
-		A31A4AA627301FFB0055772F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31A4AA427301FFB0055772F /* Main.storyboard */; };
 		A31A4AA827301FFB0055772F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A31A4AA727301FFB0055772F /* Assets.xcassets */; };
-		A31A4AAB27301FFB0055772F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31A4AA927301FFB0055772F /* LaunchScreen.storyboard */; };
 		A31A4AB627301FFB0055772F /* MyAsthmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A4AB527301FFB0055772F /* MyAsthmaTests.swift */; };
 		A31A4AC027301FFB0055772F /* MyAsthmaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A4ABF27301FFB0055772F /* MyAsthmaUITests.swift */; };
 		A31A4AC227301FFB0055772F /* MyAsthmaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A4AC127301FFB0055772F /* MyAsthmaUITestsLaunchTests.swift */; };
+		A31A4AD0273020480055772F /* CareKit in Frameworks */ = {isa = PBXBuildFile; productRef = A31A4ACF273020480055772F /* CareKit */; };
+		A31A4AD2273020480055772F /* CareKitFHIR in Frameworks */ = {isa = PBXBuildFile; productRef = A31A4AD1273020480055772F /* CareKitFHIR */; };
+		A31A4AD4273020480055772F /* CareKitStore in Frameworks */ = {isa = PBXBuildFile; productRef = A31A4AD3273020480055772F /* CareKitStore */; };
+		A31A4AD6273020480055772F /* CareKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = A31A4AD5273020480055772F /* CareKitUI */; };
+		A31A4ADA273022D20055772F /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A4AD9273022D20055772F /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,15 +43,14 @@
 		A31A4A9E27301FFB0055772F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A31A4AA027301FFB0055772F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A31A4AA227301FFB0055772F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A31A4AA527301FFB0055772F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A31A4AA727301FFB0055772F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A31A4AAA27301FFB0055772F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A31A4AAC27301FFB0055772F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A31A4AB127301FFB0055772F /* MyAsthmaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAsthmaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A31A4AB527301FFB0055772F /* MyAsthmaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAsthmaTests.swift; sourceTree = "<group>"; };
 		A31A4ABB27301FFB0055772F /* MyAsthmaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAsthmaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A31A4ABF27301FFB0055772F /* MyAsthmaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAsthmaUITests.swift; sourceTree = "<group>"; };
 		A31A4AC127301FFB0055772F /* MyAsthmaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAsthmaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A31A4AD9273022D20055772F /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A31A4AD0273020480055772F /* CareKit in Frameworks */,
+				A31A4AD2273020480055772F /* CareKitFHIR in Frameworks */,
+				A31A4AD6273020480055772F /* CareKitUI in Frameworks */,
+				A31A4AD4273020480055772F /* CareKitStore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,10 +108,9 @@
 				A31A4A9E27301FFB0055772F /* AppDelegate.swift */,
 				A31A4AA027301FFB0055772F /* SceneDelegate.swift */,
 				A31A4AA227301FFB0055772F /* ViewController.swift */,
-				A31A4AA427301FFB0055772F /* Main.storyboard */,
 				A31A4AA727301FFB0055772F /* Assets.xcassets */,
-				A31A4AA927301FFB0055772F /* LaunchScreen.storyboard */,
 				A31A4AAC27301FFB0055772F /* Info.plist */,
+				A31A4AD9273022D20055772F /* CalendarView.swift */,
 			);
 			path = MyAsthma;
 			sourceTree = "<group>";
@@ -143,6 +148,12 @@
 			dependencies = (
 			);
 			name = MyAsthma;
+			packageProductDependencies = (
+				A31A4ACF273020480055772F /* CareKit */,
+				A31A4AD1273020480055772F /* CareKitFHIR */,
+				A31A4AD3273020480055772F /* CareKitStore */,
+				A31A4AD5273020480055772F /* CareKitUI */,
+			);
 			productName = MyAsthma;
 			productReference = A31A4A9B27301FFB0055772F /* MyAsthma.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,9 @@
 				Base,
 			);
 			mainGroup = A31A4A9227301FFB0055772F;
+			packageReferences = (
+				A31A4ACE273020480055772F /* XCRemoteSwiftPackageReference "CareKit" */,
+			);
 			productRefGroup = A31A4A9C27301FFB0055772F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,9 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A31A4AAB27301FFB0055772F /* LaunchScreen.storyboard in Resources */,
 				A31A4AA827301FFB0055772F /* Assets.xcassets in Resources */,
-				A31A4AA627301FFB0055772F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +272,7 @@
 			files = (
 				A31A4AA327301FFB0055772F /* ViewController.swift in Sources */,
 				A31A4A9F27301FFB0055772F /* AppDelegate.swift in Sources */,
+				A31A4ADA273022D20055772F /* CalendarView.swift in Sources */,
 				A31A4AA127301FFB0055772F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,25 +308,6 @@
 			targetProxy = A31A4ABC27301FFB0055772F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		A31A4AA427301FFB0055772F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A31A4AA527301FFB0055772F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A31A4AA927301FFB0055772F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A31A4AAA27301FFB0055772F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A31A4AC327301FFB0055772F /* Debug */ = {
@@ -444,7 +438,6 @@
 				INFOPLIST_FILE = MyAsthma/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,7 +465,6 @@
 				INFOPLIST_FILE = MyAsthma/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -624,6 +616,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A31A4ACE273020480055772F /* XCRemoteSwiftPackageReference "CareKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/carekit-apple/CareKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A31A4ACF273020480055772F /* CareKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A31A4ACE273020480055772F /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKit;
+		};
+		A31A4AD1273020480055772F /* CareKitFHIR */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A31A4ACE273020480055772F /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitFHIR;
+		};
+		A31A4AD3273020480055772F /* CareKitStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A31A4ACE273020480055772F /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitStore;
+		};
+		A31A4AD5273020480055772F /* CareKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A31A4ACE273020480055772F /* XCRemoteSwiftPackageReference "CareKit" */;
+			productName = CareKitUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A31A4A9327301FFB0055772F /* Project object */;
 }
