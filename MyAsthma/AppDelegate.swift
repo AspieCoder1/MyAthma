@@ -88,6 +88,14 @@ private extension OCKStore {
         montelukast.asset = "tablet"
         montelukast.impactsAdherence = true
         
-        addTasks([relvar, fexofenadine, montelukast], callbackQueue: .main, completion: nil)
+        // Blue Inhaler
+        let blueInhalerSchedule = OCKSchedule(composing: [OCKScheduleElement(start: morning, end: nil, interval: DateComponents(day: 1),
+                                                                             text: "Anytime throughout the day", targetValues: [], duration: .allDay)])
+        var blueInhaler = OCKTask(id: "salabutamol", title: "Blue inhaler", carePlanUUID: nil, schedule: blueInhalerSchedule)
+        blueInhaler.instructions = "Take 2-8 puffs as requires"
+        blueInhaler.asset = "puffs"
+        blueInhaler.impactsAdherence = false
+        
+        addTasks([relvar, fexofenadine, montelukast, blueInhaler], callbackQueue: .main, completion: nil)
     }
 }

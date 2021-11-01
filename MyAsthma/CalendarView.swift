@@ -54,6 +54,11 @@ class CalendarView: OCKDailyPageViewController {
                 return OCKChecklistTaskViewController(task: task,
                                                       eventQuery: .init(for: date),
                                                       storeManager: self.storeManager)
+            case "salabutamol":
+                return OCKButtonLogTaskViewController(task: task,
+                                            eventQuery: .init(for: date),
+                                            storeManager: self.storeManager)
+
             default:
                 return OCKSimpleTaskViewController(task: task,
                                          eventQuery: .init(for: date),

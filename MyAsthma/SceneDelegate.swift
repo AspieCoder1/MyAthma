@@ -25,16 +25,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // Sets up the calendar view
         let feed = CalendarView(storeManager: appDelegate.synchronizedStoreManager)
-        feed.title = "My medicines"
+        feed.title = "My tasks"
         feed.tabBarItem = UITabBarItem(
-            title: "Calendar",
-            image: UIImage(systemName: "calendar"),
+            title: "Tasks",
+            image: UIImage(systemName: "heart.text.square"),
             tag: 0
         )
         
+        let insights = OCKListViewController()
+        insights.title = "Data insights"
+        insights.tabBarItem = UITabBarItem(
+            title: "insights", image: UIImage(systemName: "chart.xyaxis.line"), tag: 0
+        )
+        
+        
         let root = UITabBarController()
         let feedTab = UINavigationController(rootViewController: feed)
-        root.setViewControllers([feedTab], animated: false)
+        
+        root.setViewControllers([feedTab, insights], animated: false)
         
         window = UIWindow(windowScene: scene as! UIWindowScene)
         window?.rootViewController = root
