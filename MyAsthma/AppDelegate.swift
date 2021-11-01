@@ -66,6 +66,7 @@ private extension OCKStore {
         
         // Relvar
         var relvar = OCKTask(id: "inhaler", title: "Relvar 184/22", carePlanUUID: nil, schedule: schedule)
+        relvar.groupIdentifier = "inhaler"
         relvar.instructions = "Take 1 puff"
         relvar.asset = "puff"
         relvar.impactsAdherence = true
@@ -75,6 +76,7 @@ private extension OCKStore {
             OCKScheduleElement(start: morning, end: nil, interval: DateComponents(day: 1)),
         ])
         var fexofenadine = OCKTask(id: "fexofenadine", title: "Fexofendaine", carePlanUUID: nil, schedule: fexofenadineSchedule)
+        fexofenadine.groupIdentifier = "medication"
         fexofenadine.instructions = "Take 1 tablet"
         fexofenadine.asset = "tablet"
         fexofenadine.impactsAdherence = true
@@ -84,6 +86,7 @@ private extension OCKStore {
             OCKScheduleElement(start: evening, end: nil, interval: DateComponents(day: 1)),
         ])
         var montelukast = OCKTask(id: "montelukast", title: "Montelukast", carePlanUUID: nil, schedule: montelukastSchedule)
+        montelukast.groupIdentifier = "medication"
         montelukast.instructions = "Take 1 tablet"
         montelukast.asset = "tablet"
         montelukast.impactsAdherence = true
@@ -92,6 +95,7 @@ private extension OCKStore {
         let blueInhalerSchedule = OCKSchedule(composing: [OCKScheduleElement(start: morning, end: nil, interval: DateComponents(day: 1),
                                                                              text: "Anytime throughout the day", targetValues: [], duration: .allDay)])
         var blueInhaler = OCKTask(id: "salabutamol", title: "Blue inhaler", carePlanUUID: nil, schedule: blueInhalerSchedule)
+        blueInhaler.groupIdentifier = "reliever"
         blueInhaler.instructions = "Take 2-8 puffs as requires"
         blueInhaler.asset = "puffs"
         blueInhaler.impactsAdherence = false

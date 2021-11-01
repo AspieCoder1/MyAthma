@@ -49,12 +49,12 @@ class CalendarView: OCKDailyPageViewController {
     private func taskViewController(
         for task: OCKAnyTask,
         on date: Date) -> UIViewController? {
-            switch task.id {
+            switch task.groupIdentifier {
             case "inhaler":
                 return OCKChecklistTaskViewController(task: task,
                                                       eventQuery: .init(for: date),
                                                       storeManager: self.storeManager)
-            case "salabutamol":
+            case "reliever":
                 return OCKButtonLogTaskViewController(task: task,
                                             eventQuery: .init(for: date),
                                             storeManager: self.storeManager)
