@@ -23,6 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
+        // Sets up the calendar view
         let feed = CalendarView(storeManager: appDelegate.synchronizedStoreManager)
         feed.title = "My medicines"
         feed.tabBarItem = UITabBarItem(
