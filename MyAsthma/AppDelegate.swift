@@ -64,39 +64,30 @@ private extension OCKStore {
             OCKScheduleElement(start: evening, end: nil, interval: DateComponents(day: 1)),
         ])
         
-        var relvar = OCKTask(id: "inhaler-relvar", title: "Take Relvar", carePlanUUID: nil, schedule: schedule)
-        relvar.instructions = "Take 1 puff of Relvar 184/22"
+        // Relvar
+        var relvar = OCKTask(id: "inhaler", title: "Relvar 184/22", carePlanUUID: nil, schedule: schedule)
+        relvar.instructions = "Take 1 puff"
         relvar.asset = "puff"
         relvar.impactsAdherence = true
-        addTasks([relvar], callbackQueue: .main, completion: nil)
-//        let schedule = OCKSchedule(composing: [
-//            OCKScheduleElement(start: beforeBreakfast, end: nil,
-//                               interval: DateComponents(day: 1)),
-//
-//            OCKScheduleElement(start: afterLunch, end: nil,
-//                               interval: DateComponents(day: 2))
-//        ])
-//
-//        var doxylamine = OCKTask(id: "doxylamine", title: "Take Doxylamine",
-//                                 carePlanUUID: nil, schedule: schedule)
-//        doxylamine.instructions = "Take 25mg of doxylamine when you experience nausea."
-//        doxylamine.asset = "pills"
-//        let nauseaSchedule = OCKSchedule(composing: [
-//            OCKScheduleElement(start: beforeBreakfast, end: nil, interval: DateComponents(day: 1),
-//                               text: "Anytime throughout the day", targetValues: [], duration: .allDay)
-//        ])
-//
-//        var nausea = OCKTask(id: "nausea", title: "Track your nausea",
-//                             carePlanUUID: nil, schedule: nauseaSchedule)
-//        nausea.impactsAdherence = false
-//        nausea.instructions = "Tap the button below anytime you experience nausea."
-//
-//        let kegelElement = OCKScheduleElement(start: beforeBreakfast, end: nil, interval: DateComponents(day: 2))
-//        let kegelSchedule = OCKSchedule(composing: [kegelElement])
-//        var kegels = OCKTask(id: "kegels", title: "Kegel Exercises", carePlanUUID: nil, schedule: kegelSchedule)
-//        kegels.impactsAdherence = true
-//        kegels.instructions = "Perform kegel exercies"
-//
-//        addTasks([nausea, doxylamine, kegels], callbackQueue: .main, completion: nil)
+        
+        // Fexofenadine
+        let fexofenadineSchedule = OCKSchedule(composing: [
+            OCKScheduleElement(start: morning, end: nil, interval: DateComponents(day: 1)),
+        ])
+        var fexofenadine = OCKTask(id: "fexofenadine", title: "Fexofendaine", carePlanUUID: nil, schedule: fexofenadineSchedule)
+        fexofenadine.instructions = "Take 1 tablet"
+        fexofenadine.asset = "tablet"
+        fexofenadine.impactsAdherence = true
+        
+        // Montelukast
+        let montelukastSchedule = OCKSchedule(composing: [
+            OCKScheduleElement(start: evening, end: nil, interval: DateComponents(day: 1)),
+        ])
+        var montelukast = OCKTask(id: "montelukast", title: "Montelukast", carePlanUUID: nil, schedule: montelukastSchedule)
+        montelukast.instructions = "Take 1 tablet"
+        montelukast.asset = "tablet"
+        montelukast.impactsAdherence = true
+        
+        addTasks([relvar, fexofenadine, montelukast], callbackQueue: .main, completion: nil)
     }
 }

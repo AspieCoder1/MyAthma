@@ -50,13 +50,14 @@ class CalendarView: OCKDailyPageViewController {
         for task: OCKAnyTask,
         on date: Date) -> UIViewController? {
             switch task.id {
-            case "inhaler-relvar":
-                let inhalerCard = OCKButtonLogTaskViewController(task: task,
-                                                                 eventQuery: .init(for: date),
-                                                                 storeManager: self.storeManager)
-                return inhalerCard
+            case "inhaler":
+                return OCKChecklistTaskViewController(task: task,
+                                                      eventQuery: .init(for: date),
+                                                      storeManager: self.storeManager)
             default:
-                return nil
+                return OCKSimpleTaskViewController(task: task,
+                                         eventQuery: .init(for: date),
+                                         storeManager: self.storeManager)
             }
         }
 }
