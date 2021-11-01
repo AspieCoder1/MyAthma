@@ -51,6 +51,7 @@
 		A31A4ABF27301FFB0055772F /* MyAsthmaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAsthmaUITests.swift; sourceTree = "<group>"; };
 		A31A4AC127301FFB0055772F /* MyAsthmaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAsthmaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A31A4AD9273022D20055772F /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		A31A4ADB2730263D0055772F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +86,7 @@
 		A31A4A9227301FFB0055772F = {
 			isa = PBXGroup;
 			children = (
+				A31A4ADB2730263D0055772F /* README.md */,
 				A31A4A9D27301FFB0055772F /* MyAsthma */,
 				A31A4AB427301FFB0055772F /* MyAsthmaTests */,
 				A31A4ABE27301FFB0055772F /* MyAsthmaUITests */,
