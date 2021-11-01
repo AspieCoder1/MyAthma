@@ -11,7 +11,6 @@ import CareKitStore
 import CareKitUI
 import UIKit
 
-class CalendarView: OCKDailyPageViewController
-                    {
+class CalendarView: OCKDailyPageViewController {
     
 }
