@@ -43,6 +43,8 @@ final class InsightsViewController: OCKListViewController {
             storeManager: storeManager
         )
         
+        blueInhalerChart.chartView.headerView.titleLabel.text = "Blue inhaler usage"
+        
         appendViewController(blueInhalerChart, animated: false)
     }
     
