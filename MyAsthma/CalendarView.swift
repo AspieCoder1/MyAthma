@@ -12,7 +12,7 @@ import CareKitUI
 import UIKit
 import os.log
 
-class CalendarView: OCKDailyPageViewController {
+class CalendarViewController: OCKDailyPageViewController {
     override func dailyPageViewController(_ dailyPageViewController: OCKDailyPageViewController, prepare listViewController: OCKListViewController, for date: Date) {
         self.fetchTasks(on: date) { tasks in
             tasks.compactMap {

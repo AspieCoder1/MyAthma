@@ -9,20 +9,41 @@ import Foundation
 import CareKit
 import CareKitStore
 import CareKitUI
+import UIKit
 
-class InsightsViewController: OCKListViewController {
+final class InsightsViewController: OCKListViewController {
     let storeManager: OCKSynchronizedStoreManager
     
     init(storeManager: OCKSynchronizedStoreManager) {
-         self.storeManager = storeManager
-         super.init(nibName: nil, bundle: nil)
-     }
-
-     required init?(coder: NSCoder) {
-         fatalError("init(coder:) has not been implemented")
-     }
+        self.storeManager = storeManager
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
-        self.viewDidLoad()
+        super.viewDidLoad()
+        navigationController?.navigationBar.prefersLargeTitles = true
+        // Do any additional setup after loading the view.
+        let blueInhalerUsages = OCKDataSeriesConfiguration(
+            taskID: "salabutamol",
+            legendTitle: "Blue inhaler usage (puffs)",
+            gradientStartColor: UIColor.systemBlue,
+            gradientEndColor:UIColor.systemBlue,
+            markerSize: 10,
+            eventAggregator: OCKEventAggregator.countOutcomeValues
+        )
+        
+        let blueInhalerChart = OCKCartesianChartViewController(
+            plotType: .bar,
+            selectedDate: Date(),
+            configurations: [blueInhalerUsages],
+            storeManager: storeManager
+        )
+        
+        appendViewController(blueInhalerChart, animated: false)
     }
+    
 }

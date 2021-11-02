@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
         // Sets up the calendar view
-        let feed = CalendarView(storeManager: appDelegate.synchronizedStoreManager)
+        let feed = CalendarViewController(storeManager: appDelegate.synchronizedStoreManager)
         feed.title = "My tasks"
         feed.tabBarItem = UITabBarItem(
             title: "Tasks",
