@@ -32,8 +32,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             tag: 0
         )
         
-        let insights = OCKListViewController()
-        insights.title = "Data insights"
+        let insights = InsightsViewController(storeManager: appDelegate.synchronizedStoreManager)
+        insights.title = "Insights"
         insights.tabBarItem = UITabBarItem(
             title: "insights", image: UIImage(systemName: "chart.xyaxis.line"), tag: 0
         )

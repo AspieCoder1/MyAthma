@@ -19,6 +19,7 @@
 		A31A4AD4273020480055772F /* CareKitStore in Frameworks */ = {isa = PBXBuildFile; productRef = A31A4AD3273020480055772F /* CareKitStore */; };
 		A31A4AD6273020480055772F /* CareKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = A31A4AD5273020480055772F /* CareKitUI */; };
 		A31A4ADA273022D20055772F /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31A4AD9273022D20055772F /* CalendarView.swift */; };
+		A351324C2731633D00F60ADE /* InsightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A351324B2731633D00F60ADE /* InsightsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		A31A4AC127301FFB0055772F /* MyAsthmaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAsthmaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A31A4AD9273022D20055772F /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		A31A4ADB2730263D0055772F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A351324B2731633D00F60ADE /* InsightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				A31A4AA727301FFB0055772F /* Assets.xcassets */,
 				A31A4AAC27301FFB0055772F /* Info.plist */,
 				A31A4AD9273022D20055772F /* CalendarView.swift */,
+				A351324B2731633D00F60ADE /* InsightsViewController.swift */,
 			);
 			path = MyAsthma;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			files = (
 				A31A4AA327301FFB0055772F /* ViewController.swift in Sources */,
 				A31A4A9F27301FFB0055772F /* AppDelegate.swift in Sources */,
+				A351324C2731633D00F60ADE /* InsightsViewController.swift in Sources */,
 				A31A4ADA273022D20055772F /* CalendarView.swift in Sources */,
 				A31A4AA127301FFB0055772F /* SceneDelegate.swift in Sources */,
 			);
