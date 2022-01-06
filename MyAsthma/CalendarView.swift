@@ -50,7 +50,7 @@ class CalendarViewController: OCKDailyPageViewController {
         for task: OCKAnyTask,
         on date: Date) -> UIViewController? {
             switch task.groupIdentifier {
-            case "inhaler":
+            case "multiple":
                 return OCKChecklistTaskViewController(task: task,
                                                       eventQuery: .init(for: date),
                                                       storeManager: self.storeManager)
@@ -58,7 +58,6 @@ class CalendarViewController: OCKDailyPageViewController {
                 return OCKButtonLogTaskViewController(task: task,
                                             eventQuery: .init(for: date),
                                             storeManager: self.storeManager)
-
             default:
                 return OCKSimpleTaskViewController(task: task,
                                          eventQuery: .init(for: date),

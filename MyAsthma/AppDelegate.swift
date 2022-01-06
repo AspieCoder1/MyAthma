@@ -10,6 +10,7 @@ import CareKit
 import CareKitStore
 import Contacts
 import HealthKit
+import CareKitFHIR
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate{
@@ -64,12 +65,12 @@ private extension OCKStore {
             OCKScheduleElement(start: evening, end: nil, interval: DateComponents(day: 1)),
         ])
         
-        // Relvar
-        var relvar = OCKTask(id: "inhaler", title: "Relvar 184/22", carePlanUUID: nil, schedule: schedule)
-        relvar.groupIdentifier = "inhaler"
-        relvar.instructions = "Take 1 puff"
-        relvar.asset = "puff"
-        relvar.impactsAdherence = true
+        // Fostair
+        var fostair = OCKTask(id: "fostair", title: "Fostair NextInhaler", carePlanUUID: nil, schedule: schedule)
+        fostair.groupIdentifier = "multiple"
+        fostair.instructions = "Take 4 puff"
+        fostair.asset = "puff"
+        fostair.impactsAdherence = true
         
         // Fexofenadine
         let fexofenadineSchedule = OCKSchedule(composing: [
@@ -100,6 +101,13 @@ private extension OCKStore {
         blueInhaler.asset = "puffs"
         blueInhaler.impactsAdherence = false
         
-        addTasks([relvar, fexofenadine, montelukast, blueInhaler], callbackQueue: .main, completion: nil)
+        var peakFlow = OCKDSTU2CarePlanActivityCoder(id: "peak flow", title: "Peak flow", carePlanUUID: nil, schedule: schedule)
+        peakFlow.userInfo?.value = Int.random(in: 350..<600).string
+        peakFlow.groupIdentifier = "multiple"
+        peakFlow.instructions = "Take 3 peak flow readings and record your best one"
+        peakFlow.asset = "reading"
+        peakFlow.impactsAdherence = true
+        
+        addTasks([fostair, fexofenadine, montelukast, blueInhaler, peakFlow], callbackQueue: .main, completion: nil)
     }
 }
