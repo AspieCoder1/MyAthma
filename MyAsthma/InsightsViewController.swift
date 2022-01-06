@@ -80,11 +80,7 @@ final class InsightsViewController: OCKListViewController {
             gradientStartColor: UIColor.systemBlue,
             gradientEndColor:UIColor.systemBlue,
             markerSize: 10,
-            eventAggregator: OCKEventAggregator.custom({ events in
-                events.compactMap{
-                    $0.task.userInfo?.value
-                }
-            })
+            eventAggregator: OCKEventAggregator.countOutcomes
         )
         
         let fostairChart = OCKCartesianChartViewController(

@@ -101,8 +101,7 @@ private extension OCKStore {
         blueInhaler.asset = "puffs"
         blueInhaler.impactsAdherence = false
         
-        var peakFlow = OCKDSTU2CarePlanActivityCoder(id: "peak flow", title: "Peak flow", carePlanUUID: nil, schedule: schedule)
-        peakFlow.userInfo?.value = Int.random(in: 350..<600).string
+        var peakFlow = OCKTask(id: "peak flow", title: "Peak flow", carePlanUUID: nil, schedule: schedule)
         peakFlow.groupIdentifier = "multiple"
         peakFlow.instructions = "Take 3 peak flow readings and record your best one"
         peakFlow.asset = "reading"
